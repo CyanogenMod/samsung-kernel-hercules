@@ -1755,6 +1755,14 @@ static char *usb_functions_rndis[] = {
 #endif
 };
 
+static char *charm_usb_functions_rndis_adb[] = {
+    "rndis",
+#ifndef CONFIG_USB_ANDROID_SAMSUNG_COMPOSITE
+    "diag",
+#endif
+    "adb",
+};
+
 #ifdef CONFIG_USB_ANDROID_SAMSUNG_COMPOSITE
 static char *usb_functions_ums[] = {
 	"usb_mass_storage",
