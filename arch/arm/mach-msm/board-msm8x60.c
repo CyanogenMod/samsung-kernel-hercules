@@ -2347,7 +2347,7 @@ static struct android_usb_product charm_usb_products[] = {
 #endif
 
 static struct usb_mass_storage_platform_data mass_storage_pdata = {
-	.nluns		= 1,
+	.nluns		= 2,
 #ifdef CONFIG_USB_ANDROID_SAMSUNG_COMPOSITE
 	.vendor		= "SAMSUNG",
 #if defined(CONFIG_KOR_MODEL_SHV_E110S)
